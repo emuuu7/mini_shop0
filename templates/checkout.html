@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1>Checkout</h1>
+<form method="post" action="{{ url_for('checkout_submit') }}" class="form">
+  <label>Name <input name="name" required></label>
+  <label>Email <input type="email" name="email" required></label>
+  <label>Address <textarea name="address" required></textarea></label>
+  <button type="submit">Place Order</button>
+</form>
+{% endblock %}
+
+
+
+

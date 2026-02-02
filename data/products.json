@@ -1,0 +1,34 @@
+[
+  {
+    "id": "P-001",
+    "name": "USB Keyboard",
+    "price": 799,
+    "stock": 0,
+    "category": "Peripherals",
+    "image": "/static/img/keyboard.jpg"
+  },
+  {
+    "id": "P-002",
+    "name": "USB Mouse",
+    "price": 399,
+    "stock": 0,
+    "category": "Peripherals",
+    "image": "/static/img/mouse.jpg"
+  },
+  {
+    "id": "P-003",
+    "name": "HDMI Cable",
+    "price": 199,
+    "stock": 25,
+    "category": "Cables",
+    "image": "/static/img/hdmi.jpg"
+  },
+  {
+    "id": "P-655515",
+    "name": "c_type cable",
+    "price": 99.0,
+    "stock": 30,
+    "category": "cables",
+    "image": "/static/img/c_type.jpg"
+  }
+]

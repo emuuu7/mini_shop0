@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1>Catalog</h1>
+
+<form method="get" action="{{ url_for('catalog') }}" class="row">
+  <input type="hidden" name="q" value="{{ q }}">
+  <label>Category:
+    <select name="category" onchange="this.form.submit()">
+      <option value="">All</option>
+      {% for c in categories %}
+        <option value="{{ c }}" {{ 'selected' if c==cat else '' }}>{{ c }}</option>
+      {% endfor %}
+    </select>
+  </label>
+</form>
+
+<div class="grid">
+{% for p in products %}
+  <div class="card">
+    <img src="{{ p.image or '' }}" alt="">
+    <h3>{{ p.name }}</h3>
+    <p>ETB {{ "%.2f"|format(p.price) }}</p>
+    <p class="muted">Stock: {{ p.stock }}</p>
+    <form method="post" action="{{ url_for('cart_add') }}">
+      <input type="hidden" name="product_id" value="{{ p.id }}">
+      <input type="number" name="qty" value="1" min="1">
+      <button type="submit">Add to Cart</button>
+    </form>
+  </div>
+{% endfor %}
+</div>
+{% endblock %}

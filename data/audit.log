@@ -1,0 +1,60 @@
+2025-09-04T21:35:31.765073 | add_to_cart | product_id=P-001, qty=3, new_qty=3
+2025-09-04T21:35:46.592734 | remove_from_cart | product_id=P-001
+2025-09-04T21:35:57.778786 | add_to_cart | product_id=P-001, qty=3, new_qty=3
+2025-09-04T21:35:59.767237 | update_cart | product_id=P-001, qty=3
+2025-09-04T21:36:02.486056 | update_cart | product_id=P-001, qty=3
+2025-09-04T21:36:04.360924 | remove_from_cart | product_id=P-001
+2025-09-04T21:36:31.288395 | add_to_cart | product_id=P-001, qty=3, new_qty=3
+2025-09-04T21:36:36.526906 | update_cart | product_id=P-001, qty=3
+2025-09-04T21:43:17.138445 | add_to_cart | product_id=P-001, qty=1, new_qty=4
+2025-09-04T21:44:38.263977 | add_to_cart | product_id=P-001, qty=1, new_qty=5
+2025-09-04T21:45:31.507563 | remove_from_cart | product_id=P-001
+2025-09-04T21:46:27.568252 | admin_login | user=admin, ok=True
+2025-09-04T21:46:34.182202 | admin_login | user=admin, ok=False
+2025-09-04T21:46:41.214669 | admin_login | user=tme, ok=False
+2025-09-04T21:47:08.342271 | admin_login | user=admin, ok=True
+2025-09-05T12:12:35.820466 | add_to_cart | product_id=P-001, qty=4, new_qty=4
+2025-09-05T12:16:24.209999 | add_to_cart | product_id=P-001, qty=1, new_qty=5
+2025-09-05T12:18:16.228724 | checkout | order_id=20250905-151816-0E39, total=3995, items=1
+2025-09-05T12:18:59.643241 | add_to_cart | product_id=P-001, qty=1, new_qty=1
+2025-09-05T12:19:28.834505 | checkout | order_id=20250905-151928-A043, total=799, items=1
+2025-09-05T17:14:42.219447 | add_to_cart | product_id=P-003, qty=1, new_qty=1
+2025-09-05T17:14:54.023893 | update_cart | product_id=P-003, qty=3
+2025-09-05T17:15:38.377440 | checkout | order_id=20250905-201538-91A0, total=597, items=1
+2025-09-05T17:24:19.471596 | add_to_cart | product_id=P-001, qty=1, new_qty=1
+2025-09-05T17:24:30.983015 | checkout | order_id=20250905-202430-57BD, total=799, items=1
+2025-09-05T18:20:07.892682 | admin_login | user=admin, ok=True
+2025-09-05T18:21:08.976661 | add_to_cart | product_id=P-001, qty=1, new_qty=1
+2025-09-05T18:21:29.073571 | checkout | order_id=20250905-212129-92BE, total=799, items=1
+2025-09-05T18:27:43.311889 | admin_login | user=admin, ok=True
+2025-09-05T18:30:23.639194 | admin_add_product | product_id=P-655515
+2025-09-05T18:51:04.298917 | add_to_cart | product_id=P-002, qty=1, new_qty=1
+2025-09-05T18:51:26.401915 | add_to_cart | product_id=P-002, qty=15, new_qty=16
+2025-09-05T18:52:08.846980 | checkout | order_id=20250905-215208-C641, total=6384, items=1
+2025-09-05T21:05:22.538446 | add_to_cart | product_id=P-001, qty=1, new_qty=1
+2025-09-05T21:06:34.830512 | add_to_cart | product_id=P-001, qty=1, new_qty=2
+2025-09-05T21:09:56.295202 | add_to_cart | product_id=P-001, qty=1, new_qty=3
+2025-09-05T21:55:19.355517 | update_cart | product_id=P-001, qty=3
+2025-09-05T21:55:26.616661 | update_cart | product_id=P-001, qty=2
+2025-09-05T22:00:54.150516 | checkout | order_id=20250906-010054-8B5D, total=1598, items=1
+2025-09-05T22:02:30.450753 | add_to_cart | product_id=P-001, qty=1, new_qty=1
+2025-09-05T22:02:44.259452 | checkout | order_id=20250906-010244-9558, total=799, items=1
+2025-09-05T22:03:20.612962 | remove_from_cart | product_id=P-001
+2025-09-05T22:04:54.305402 | add_to_cart | product_id=P-002, qty=1, new_qty=1
+2025-09-05T22:05:01.701844 | checkout | order_id=20250906-010501-C0CF, total=399, items=1
+2025-09-05T22:18:47.258314 | add_to_cart | product_id=P-001, qty=1, new_qty=1
+2025-09-05T22:23:35.951055 | admin_login | user=admin, ok=False
+2025-09-05T22:23:48.836640 | admin_login | user=admin, ok=True
+2025-09-05T22:57:12.183568 | add_to_cart | product_id=P-001, qty=1, new_qty=1
+2025-09-05T22:57:24.146988 | add_to_cart | product_id=P-003, qty=1, new_qty=1
+2025-09-05T22:57:28.339585 | add_to_cart | product_id=P-003, qty=1, new_qty=2
+2025-09-05T22:57:38.762716 | remove_from_cart | product_id=P-001
+2025-09-05T22:57:45.506835 | update_cart | product_id=P-003, qty=2
+2025-09-05T22:57:55.971028 | checkout | order_id=20250906-015755-428F, total=398, items=1
+2026-01-23T05:01:34.281525 | add_to_cart | product_id=P-001, qty=1, new_qty=1
+2026-01-23T05:01:59.595645 | admin_login | user=admin, ok=False
+2026-01-23T05:02:28.352765 | add_to_cart | product_id=P-002, qty=5, new_qty=3
+2026-01-23T05:02:41.943889 | add_to_cart | product_id=P-002, qty=7, new_qty=3
+2026-01-23T05:02:51.800526 | add_to_cart | product_id=P-002, qty=1, new_qty=3
+2026-01-23T05:03:38.980803 | add_to_cart | product_id=P-002, qty=5, new_qty=3
+2026-01-23T05:04:09.346431 | checkout | order_id=20260123-080409-8E88, total=1996, items=2

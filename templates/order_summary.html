@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1>Order {{ order.id }}</h1>
+<p><strong>Buyer:</strong> {{ order.buyer.name }} ({{ order.buyer.email }})</p>
+<p><strong>Ship to:</strong> {{ order.buyer.address }}</p>
+<table>
+  <tr><th>Product</th><th>Price</th><th>Qty</th><th>Line</th></tr>
+  {% for it in order["items"] %}
+  <tr>
+    <td>{{ it.name }}</td>
+    <td>ETB {{ "%.2f"|format(it.price) }}</td>
+    <td>{{ it.qty }}</td>
+    <td>ETB {{ "%.2f"|format(it.price * it.qty) }}</td>
+  </tr>
+  {% endfor %}
+  <tr><th colspan="3" style="text-align:right">Total:</th><th>ETB {{ "%.2f"|format(order.total) }}</th></tr>
+</table>
+<p><a href="{{ url_for('catalog') }}">Back to shop</a></p>
+{% endblock %}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Mini Shop</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<header class="bar">
+  <a href="{{ url_for('catalog') }}" class="brand"><button color="grey">HOME</button></a>
+  <form action="{{ url_for('catalog') }}" method="get" class="search">
+    <input type="text" name="q" value="{{ q|default('') }}" placeholder="Search...">
+    <button type="submit">Search</button>
+  </form>
+  <nav>
+    <a href="{{ url_for('view_cart') }}">Cart: {{ "%.2f"|format(cart_total) }}</a>
+    <a href="{{ url_for('admin_products') }}"><button>log in-></button>as Admin</a>
+  </nav>
+</header>
+
+<main class="container">
+  {% with msgs = get_flashed_messages(with_categories=true) %}
+    {% if msgs %}
+      <ul class="flash">
+        {% for cat, msg in msgs %}
+          <li class="{{ cat }}">{{ msg }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  {% endwith %}
+  {% block content %}{% endblock %}
+</main>
+
+<footer class="bar muted">© {{ 2025 }}</footer>
+</body>
+</html>
